@@ -77,8 +77,8 @@ function HistogramChart({ histogram }: { histogram: WeightStatsResponse['histogr
         />
         <YAxis tick={{ fontSize: 10 }} />
         <Tooltip
-          formatter={(value: number) => [value.toLocaleString(), 'Count']}
-          labelFormatter={(label: number) => `Value: ${label.toFixed(4)}`}
+          formatter={(value) => [String(value), 'Count']}
+          labelFormatter={(label) => `Value: ${Number(label).toFixed(4)}`}
         />
         <Bar dataKey="count" fill="#3b82f6" />
       </BarChart>

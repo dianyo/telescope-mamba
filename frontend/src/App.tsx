@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { QueryClient, QueryClientProvider, useQuery, useMutation } from '@tanstack/react-query';
 import { ReactFlowProvider } from '@xyflow/react';
 import { modelsApi, graphApi } from './api/client';

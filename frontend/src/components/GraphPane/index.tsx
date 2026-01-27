@@ -85,7 +85,7 @@ export function GraphPane() {
 
   // Handle node click for layer selection
   const onNodeClick: NodeMouseHandler = useCallback(
-    (event, node) => {
+    (_event, node) => {
       const layerName = (node.data as { fullName?: string }).fullName || node.id;
       toggleLayerSelection(layerName);
     },

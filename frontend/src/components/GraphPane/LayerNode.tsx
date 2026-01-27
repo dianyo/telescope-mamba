@@ -18,7 +18,7 @@ interface LayerNodeData {
 }
 
 export const LayerNode = memo(({ data }: NodeProps) => {
-  const nodeData = data as LayerNodeData;
+  const nodeData = data as unknown as LayerNodeData;
   const {
     label,
     className,
