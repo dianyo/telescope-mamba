@@ -82,3 +82,4 @@ activations/
 # OS
 .DS_Store
 Thumbs.db
+dev.env
